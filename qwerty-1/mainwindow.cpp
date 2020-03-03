@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QPixmap>
+//#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -29,7 +29,5 @@ void MainWindow::on_pushButton_clicked()
         ui->textBrowser->setText(s1);
     else
         ui->textEdit->document()->setPlainText("Error!!!");
-
-    ui->centralWidget->
 
 }
