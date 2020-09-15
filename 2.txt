@@ -1,0 +1,4 @@
+/sys/class/power_supply/BAT0/capacity
+https://stackoverflow.com/questions/23367857/accurate-calculation-of-cpu-usage-given-in-percentage-in-linux
+/proc/stat
+/proc/meminfo
