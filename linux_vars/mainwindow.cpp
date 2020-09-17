@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->tableWidget->setItem(0,0,new QTableWidgetItem("qwe"));
+    ui->tableWidget->setItem(0,1,new QTableWidgetItem("010101"));
 }
 
 MainWindow::~MainWindow()
