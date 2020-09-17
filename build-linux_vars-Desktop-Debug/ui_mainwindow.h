@@ -98,7 +98,7 @@ public:
         QTableWidgetItem *___qtablewidgetitem = tableWidget->verticalHeaderItem(0);
         ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "\320\234\320\276\320\264\320\265\320\273\321\214 \320\277\321\200\320\276\321\206\320\265\321\201\321\201\320\276\321\200\320\260", Q_NULLPTR));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->verticalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "\320\247\320\260\321\201\321\202\320\276\321\202\320\260 \320\277\321\200\320\276\321\206\320\265\321\201\321\201\320\276\321\200\320\260", Q_NULLPTR));
+        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "\320\247\320\260\321\201\321\202\320\276\321\202\320\260 \320\277\321\200\320\276\321\206\320\265\321\201\321\201\320\276\321\200\320\260 Mhz", Q_NULLPTR));
         QTableWidgetItem *___qtablewidgetitem2 = tableWidget->verticalHeaderItem(2);
         ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "\320\240\320\260\320\267\320\274\320\265\321\200 \320\272\320\265\321\210\320\260 \320\277\321\200\320\276\321\206\320\265\321\201\321\201\320\276\321\200\320\260", Q_NULLPTR));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->verticalHeaderItem(3);

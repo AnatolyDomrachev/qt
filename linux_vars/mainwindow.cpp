@@ -8,7 +8,16 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    get_proc_info();
+}
 
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+void MainWindow::get_proc_info()
+{
         QFile file("/proc/cpuinfo");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return;
@@ -23,10 +32,4 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->tableWidget->setItem(0,0,new QTableWidgetItem(list[0]));
     ui->tableWidget->setItem(0,1,new QTableWidgetItem("010101"));
-
-}
-
-MainWindow::~MainWindow()
-{
-    delete ui;
 }

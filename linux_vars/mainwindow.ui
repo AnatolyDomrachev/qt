@@ -45,7 +45,7 @@
     </row>
     <row>
      <property name="text">
-      <string>Частота процессора</string>
+      <string>Частота процессора Mhz</string>
      </property>
     </row>
     <row>
