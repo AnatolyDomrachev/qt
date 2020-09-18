@@ -13,8 +13,12 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
-    void get_info();
+    //void get_info();
     ~MainWindow();
+
+private slots:
+    void get_info();
+    //void on_tableWidget_activated(const QModelIndex &index);
 
 private:
     Ui::MainWindow *ui;
