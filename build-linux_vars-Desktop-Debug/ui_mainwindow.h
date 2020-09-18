@@ -110,19 +110,6 @@ public:
 
         const bool __sortingEnabled = tableWidget->isSortingEnabled();
         tableWidget->setSortingEnabled(false);
-        QTableWidgetItem *___qtablewidgetitem6 = tableWidget->item(0, 0);
-        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz", Q_NULLPTR));
-        QTableWidgetItem *___qtablewidgetitem7 = tableWidget->item(1, 0);
-        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "600.000\n"
-"", Q_NULLPTR));
-        QTableWidgetItem *___qtablewidgetitem8 = tableWidget->item(2, 0);
-        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "20480 KB", Q_NULLPTR));
-        QTableWidgetItem *___qtablewidgetitem9 = tableWidget->item(3, 0);
-        ___qtablewidgetitem9->setText(QApplication::translate("MainWindow", "20", Q_NULLPTR));
-        QTableWidgetItem *___qtablewidgetitem10 = tableWidget->item(4, 0);
-        ___qtablewidgetitem10->setText(QApplication::translate("MainWindow", "30", Q_NULLPTR));
-        QTableWidgetItem *___qtablewidgetitem11 = tableWidget->item(5, 0);
-        ___qtablewidgetitem11->setText(QApplication::translate("MainWindow", "40", Q_NULLPTR));
         tableWidget->setSortingEnabled(__sortingEnabled);
 
     } // retranslateUi

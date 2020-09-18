@@ -75,33 +75,32 @@
     </column>
     <item row="0" column="0">
      <property name="text">
-      <string>Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz</string>
+      <string/>
      </property>
     </item>
     <item row="1" column="0">
      <property name="text">
-      <string>600.000
-</string>
+      <string/>
      </property>
     </item>
     <item row="2" column="0">
      <property name="text">
-      <string>20480 KB</string>
+      <string/>
      </property>
     </item>
     <item row="3" column="0">
      <property name="text">
-      <string>20</string>
+      <string/>
      </property>
     </item>
     <item row="4" column="0">
      <property name="text">
-      <string>30</string>
+      <string/>
      </property>
     </item>
     <item row="5" column="0">
      <property name="text">
-      <string>40</string>
+      <string/>
      </property>
     </item>
    </widget>

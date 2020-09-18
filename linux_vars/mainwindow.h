@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "QTimer"
+
 
 namespace Ui {
 class MainWindow;
@@ -21,6 +23,9 @@ private slots:
     //void on_tableWidget_activated(const QModelIndex &index);
 
 private:
+
+    QTimer* tmr = new QTimer();
+
     Ui::MainWindow *ui;
 
     QString f_cpu_info = "/proc/cpuinfo";

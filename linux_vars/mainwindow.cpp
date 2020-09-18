@@ -2,13 +2,17 @@
 #include "ui_mainwindow.h"
 #include <QFile>
 #include <QTextStream>
-#include <unistd.h>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+        tmr->setInterval(1000);
+    connect(tmr, SIGNAL(timeout()), this, SLOT(get_info()));
+
+    tmr->start();
     //get_info();
 }
 
@@ -19,16 +23,11 @@ MainWindow::~MainWindow()
 
 void MainWindow::get_info()
 {
-    //while(true)
-    //{
+
     get_cpu_info();
     get_cpu_load();
     get_mem_load();
     get_bat_load();
-    ui->tableWidget->update();
-    sleep(1);
-    //}
-
 }
 
 void MainWindow::get_cpu_info()

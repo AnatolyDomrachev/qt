@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include "QThread"
-#include "QTimer"
 
 int main(int argc, char *argv[])
 {
@@ -10,7 +9,10 @@ int main(int argc, char *argv[])
     MainWindow w;
 
 
-    QTimer::singleShot(3000, &w, SLOT(get_info()));
+
+
+
+    //QTimer::(3000, &w, SLOT(get_info()));
 
 
     w.show();
