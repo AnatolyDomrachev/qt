@@ -114,9 +114,61 @@ steal = list[8];
 
 void MainWindow::get_mem_load()
 {
+    double Total , Free ;
+    QString s_total , s_free ;
+    int num_vars = 0;
+
+    QFile file(f_mem);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        return;
+
+    QTextStream in(&file);
+    QString line;
+    QStringList list ;
+    QRegularExpression regex( " +" );
+
+    for(int i=0; i<1000; i++){
+        line = in.readLine();
+
+      if(line.contains(s_mem_total))
+      {
+            QStringList list = line.split(regex);
+            s_total = list[1];
+	    num_vars++;
+      }
+
+      if(line.contains(s_mem_free))
+      {
+            QStringList list = line.split(regex);
+            s_free = list[1];
+	    num_vars++;
+      }
+
+      if(num_vars==2)
+	break;
+      
+    }
+
+    Total = s_total.toDouble();
+    Free = s_free.toDouble();
+    double result = Free/Total*100;
+
+    QString s_result = QString::number(result, 'g', 3);
+
+    ui->tableWidget->setItem(0,4,new QTableWidgetItem(s_result));
 }
 
 void MainWindow::get_bat_load()
 {
+    QFile file(f_bat);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        return;
+
+    QTextStream in(&file);
+    QString line;
+    QStringList list ;
+    line = in.readLine();
+
+    ui->tableWidget->setItem(0,5,new QTableWidgetItem(line));
 }
 
