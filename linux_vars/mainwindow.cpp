@@ -42,17 +42,18 @@ void MainWindow::get_info()
     QTextStream in(&file);
 
     std::string s1, s2, s3;
-    while (!in.atEnd()) {
+    while (true) {
         QString line = in.readLine();
 
-        //if(line.contains(s_cpu_model))
-    //{
+      if(line.contains(s_cpu_model))
+      {
             QStringList list = line.split(":");
             var = list[0];
             s1 = var.toStdString();
             v_cpu_model = list[1];
-    //}
-    //    process_line(line);
+            break;
+      }
+
     }
 
 
