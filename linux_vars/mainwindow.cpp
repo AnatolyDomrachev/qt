@@ -157,7 +157,7 @@ void MainWindow::get_mem_load()
 
     Total = s_total.toDouble();
     Free = s_free.toDouble();
-    double result = Free/Total*100;
+    double result = (Total-Free)/Total*100;
 
     QString s_result = QString::number(result, 'g', 3);
 
